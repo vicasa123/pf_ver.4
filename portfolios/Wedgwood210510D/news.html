@@ -1,0 +1,427 @@
+<!DOCTYPE html>  
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/script.js"></script>
+
+	<style>
+		.bodyheader h1{
+			font-family: "맑은고딕";
+			font-size: 35px;
+			color: #ccac00;
+			height: 150px;
+			/*background: red;*/
+			border:none;
+			margin-top: 10px;
+		}
+		.newssub{width: 70%;
+			margin-left: 15%;}
+	
+		.newssub li{
+			float: left;
+			font-weight: bold;
+			width: 25%;
+
+			margin-top: -20px;
+			margin-bottom: 20px;	
+		}
+		.newssub li:hover{
+			color: #6B90D5;
+		}
+
+		.newsbox{
+			border: 1px solid #ccc;
+			padding: 10px;
+			width: 80%;
+			margin-top: 50px;
+		}
+		figure{
+			width: 100%;
+			/*float: left;*/
+		}
+		.newsimg{
+			width: 100%;
+			margin-top: 50px;
+			display: block;
+			/*margin-left: -5%;*/
+		}
+
+		h3{text-align: center;}
+
+		.gold{
+			color: #ccac00;
+			font-size: 13px;
+			font-weight: bold;
+			letter-spacing: 2px;
+			text-align:center;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		.normal{
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+
+		.newsns{
+			display: block;
+			width: 100%;
+			/*background-color: pink;*/
+			margin-left: 47.2%;
+		}
+
+		.newsns:after{
+			clear: both; content: ""; display: block;
+			/*text-align: center;*/
+			/*display: block;*/
+			/*width: 100%;*/
+		}
+
+		.newsns li{
+			float: left;
+			width: 25px;
+			height: 20px;
+			margin: 0 auto;
+			display: block;
+		}
+
+		.the{
+			margin-top: 10px;
+			margin-bottom: 10px;
+			display: block;
+			margin-left: 48%;
+			border-color: #ccac00;
+			background:none;
+			color: #ccac00;
+			font-weight: bold;
+			padding: 5px;
+		}
+
+		.top_footer{border: none;}
+
+
+	</style>
+</head>
+<body>
+<!-- 헤더 -->
+	<header>
+
+		<div class="topbox"></div>
+
+		<div class="top">
+			<div class="logo">
+				<a href="index.html">
+					<img src="img/logoblue.png" alt="로고">
+				</a>
+			</div>
+
+			<div class="upper_navi">
+				<ul>
+					<li><a href=#>HoReCa & B2B</a></li>
+					<li><a href=#>매장정보</a></li>
+					<li><a href=mall.html>온라인몰바로가기</a></li>
+					<li><div class="search_top">
+							<input type="text">
+							<button><img src="img/search_icon.png"></button>
+						</div>	
+					</li>
+				</ul>
+			</div>
+
+			
+
+			<nav class="menu">
+				<ul class="navi">
+					<li><a href="#">추천상품</a>
+						<ul class="submenu submenu1">
+							<li><a href="#">
+								<img src="img/1_1.jpg">
+								<br>
+								<p>신상품</p>
+							</a></li>
+
+							<li><a href="#">
+								<img src="img/1_2.jpg">
+								<br>
+								<p>인기상품</p>
+							</a></li>
+
+							<li><a href="#">
+								<img src="img/1_3.jpg">
+								<br>
+								<p>기프트</p>
+							</a></li>
+						</ul>
+					</li>
+
+					<li><a href="#">테이블웨어</a>
+						<ul class="submenu submenu2">
+							<li><a href="#">디자인</a>
+								<br>
+								<ul class="sublist">
+									<li>
+										<a href=#><span><strong>전체 디자인</strong></span></a>
+									</li>
+									<li>
+										<a href="#">바이브런스</a>
+									</li>
+									<li>
+										<a href="#">플로렌틴 터콰즈</a>
+									</li>
+									<li>
+										<a href="#">와일드 스트로베리</a>
+									</li>
+									<li>
+										<a href="#">플로렌틴 핑크</a>
+									</li>
+									<li>
+										<a href="#">스위트 플럼</a>
+									</li>
+
+									<li><a href="#">코누코피아</a>
+
+									<li><a href="#">프시케</a>
+									</li>
+
+									<li><a href="#">프시케 로즈</a>
+									</li>
+
+									<li><a href="#">르네상스 골드</a>
+									</li>
+
+									<li><a href="#">페스티비티</a>
+									</li>
+
+									<li><a href="#">사라스가든</a>
+									</li>
+								</ul>
+							</li>
+
+							<li><a href="#">상품</a>
+								<br>
+								<ul class="sublist">
+									<li><a href="#">티컵&받침</a></li>
+									<li><a href="#">머그</a></li>
+									<li><a href="#">기타 접시</a></li>
+									<li><a href="#">한식기</a></li>
+									<li><a href="#">볼</a></li>
+									<li><a href="#">기타</a></li>
+								</ul>
+							</li>
+
+							<li><a href="#">바이브런스</a>
+								<br>
+								<img src="img/sub_img1.jpg" alt="사진">
+
+							</li>
+						</ul>
+					</li>
+
+					<li><a href="">홍차&티웨어</a>
+						<ul class="submenu submenu3">
+							<li><a href="#">디자인</a>
+								<ul class="sublist">
+									<li><a href="#">데이지 티 스토리</a></li>
+									<li><a href="#">버터플라이 블룸</a></li>
+									<li><a href="#">쿠쿠 티 스토리</a></li>
+									<li><a href="#">폴카도트 티 스토리</a></li>
+									<li><a href="#">퀸 오브 하트</a></li>
+									<li><a href="#">할리퀸 컬렉션</a></li>
+								</ul>
+							</li>
+							<li><a href="#">홍차</a>
+								<ul class="sublist">
+									<li><a href="#">티백</a></li>
+									<li><a href="#">티 캐디</a></li>
+									<li><a href="#">기프트</a></li>
+								</ul>
+							</li>
+							<li><a href="#">상품</a>
+								<ul class="sublist">
+									<li><a href="#">케익 스탠드</a></li>
+									<li><a href="#">원형접시</a></li>
+									<li><a href="#">티컵&받침</a></li>
+									<li><a href="#">머그</a></li>
+									<li><a href="#">티포트&설탕기&크리머</a></li>
+									<li><a href="#">기타접시</a></li>
+								</ul>
+							</li>
+							<li><a href="#">데이지 티 스토리<br>
+								<img src="img/sub_img2.jpg" alt="사진"> 
+							</a></li>
+						</ul>
+					</li>
+
+					<li><a href="designer.html">디자이너</a></li>
+
+					<li><a href="story.html">웨지우드 스토리</a></li>
+
+					<li><a href="news.html">웨지우드 소식</a></li>
+				</ul>
+			</nav>
+		</div>	
+	</header>
+<!-- 바디 -->
+	<div class="bodywrap">
+		<div class="bodyheader">
+			<img src="img/footer.jpg" alt="배경">
+			<h1>웨지우드 소식</h1>
+		</div>
+		
+		<div class="newsmenu">
+			<ul class="newssub">
+				<li>뉴스</li>
+				<li>미디어</li>
+				<li>갤러리</li>
+				<li>컬쳐</li>
+			</ul>
+		</div>
+
+		<div class="newsbox">
+			<figure>
+				<img class="newsimg" src="img/news1.jpg" alt="그림">
+				<br>
+				<figcaption>
+					<h3>[NEWS] 웨지우드 르네상스골드 진품 구별법</h3>
+					<p class="gold">2020/10/20</p>
+					<p class="normal">웨지우드 르네상스골드를 모방한 가품에 유의하시길 바랍니다.</p>
+					<button class="the">더보기</button>
+					<ul class="newsns">
+						<li><img src="img/ic_facebook_off.png" alt="facebook"></li>
+						<li><img src="img/ic_twitter_off.png" alt="twitter"></li>
+						<li><img src="img/ic_pinterest_off.png" alt="pinterest"></li>
+					</ul>
+
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img class="newsimg" src="img/news2.jpg" alt="그림">
+				<br>
+				<figcaption>
+					<h3>[NEWS] 웨지우드 시그니처 티 컬렉션</h3>
+					<p class="gold">2020/06/10</p>
+					<p class="normal">시그니처 티 컬렉션은 레어 급 최고수준의 원료로 맛과 향, 그리고 비쥬얼까지 업그레이드된 새로운 프리미엄 티 라인입니다.</p>
+					<button class="the">더보기</button>
+					<ul class="newsns">
+						<li><img src="img/ic_facebook_off.png" alt="facebook"></li>
+						<li><img src="img/ic_twitter_off.png" alt="twitter"></li>
+						<li><img src="img/ic_pinterest_off.png" alt="pinterest"></li>
+					</ul>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img class="newsimg" src="img/news3.jpg" alt="그림">
+				<br>
+				<figcaption>
+					<h3>[NEWS] NEW ARRIVALS 귀엽고 사랑스러운 컬렉션 피터래빗</h3>
+					<p class="gold">2019/05/02</p>
+					<p class="normal">동화책에 등장하는 피터래빗의 사랑스러운 표정을 그대로 재현한 웨지우드 피터래빗</p>
+					<button class="the">더보기</button>
+					<ul class="newsns">
+						<li><img src="img/ic_facebook_off.png" alt="facebook"></li>
+						<li><img src="img/ic_twitter_off.png" alt="twitter"></li>
+						<li><img src="img/ic_pinterest_off.png" alt="pinterest"></li>
+					</ul>
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img class="newsimg" src="img/news4.jpg" alt="그림">
+				<br>
+				<figcaption>
+					<h3>[NEWS] 페스티비티 한식기 NEW COLOR 출시 임박!</h3>
+					<p class="gold">2019/01/10</p>
+					<p class="normal">웨지우드의 대표적인 퀸즈웨어, 페스티비티<br>
+					뛰어난 기술력의 도기에 파스텔톤의 풍...</p>
+					<button class="the">더보기</button>
+					<ul class="newsns">
+						<li><img src="img/ic_facebook_off.png" alt="facebook"></li>
+						<li><img src="img/ic_twitter_off.png" alt="twitter"></li>
+						<li><img src="img/ic_pinterest_off.png" alt="pinterest"></li>
+					</ul>
+				</figcaption>
+			</figure>
+			
+		</div>
+	</div>
+
+<!-- 푸터 -->
+	<footer>
+		<img src="img/footer.jpg">
+		<div class="top_footer">
+			<ul class="sub_top_footer">
+				<li><a href="#">고객 서비스</a>
+					<ul class="sublist_top_footer">
+						<li><a href="#">취급 및 관리안내</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">02-3446-8330</a></li>
+						<li><a href="#">9am-6pm, Mon-Fri(GMT)</a></li>
+						<li><a href="#">토요일,일요일,공휴일 휴무</a></li>
+					</ul>
+
+				</li>
+
+				<li><a href="#">웨지우드</a>
+					<ul class="sublist_top_footer">
+						<li><a href="#">추천상품</a></li>
+						<li><a href="#">테이블웨어</a></li>
+						<li><a href="#">홍차&티웨어</a></li>
+						<li><a href="#">디자이너</a></li>
+						<li><a href="#">웨지우드 스토리</a></li>
+						<li><a href="#">웨지우드 소식</a></li>
+						<li><a href="#">HoReCa & B2B</a></li>
+						<li><a href="#">상품 ㄱ-ㅎ</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#">회사 소개</a>
+					<ul class="sublist_top_footer">
+						<li><a href="#">웨지우드 코리아</a></li>
+						<li><a href="#">매장정보</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#">뉴스레터 받아보기</a>
+					<ul class="sublist_top_footer">
+						<li>
+							<div class="search_bottom">
+								<input id="input" type="text" placeholder=" E-mail 주소입력">
+								<button>뉴스레터 구독</button>
+							</div>
+						</li>
+						<li>개인정보취급방침에 동의하여 가입하시게 됩니다.</li>
+					</ul>
+				</li>
+
+				<li><a href="#">Follow Us</a>
+					<ul class="sublist_top_footer">
+						<li><a href="#"><img src="img/facebook_icon.png" alt="sns"></a></li>
+						<li><a href="#"><img src="img/blog_icon.png" alt="sns"></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div class="bottom_footer">
+
+			<div class="footer_foot">
+				<div class="adr">
+					<p>(주)한국웨지우드마케팅 | 서울특별시 강남구 테헤란로 20길 18(역삼동,부봉빌딩4층) | 대표:존드보노</p>
+					<p>사업자등록번호 : 211-88-14932 | 대표전화 : 02-3446-8330 | e-mail : contact@wedgwoodkorea.com</p>
+				</div>
+
+				<div class="copy">
+					<p>Copyright 2014.WEDGEWOOD KOREA CO.LTD All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
