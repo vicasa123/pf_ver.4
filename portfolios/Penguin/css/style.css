@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 *{margin: 0; padding: 0;}
 
+.clearfix::before,.clearfix::after{content: ''; display: block; clear: both;}
+
 ul{list-style: none;}
 html,body{height: 100%;}
 
