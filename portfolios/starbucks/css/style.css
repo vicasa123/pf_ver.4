@@ -99,7 +99,7 @@
 .subnavi .last>ul>li>p{color: #64A70B;}
 /* ************************************메인 메뉴 */
 #article1{
-    margin-top: 115px;
+    margin-top: 100px;
     width: 100%; height: 640px;background: url(../img/2021_summer2_bg.jpg)no-repeat center; position: relative;}
 .foodwrap{width: 100%;}
 #article1 figure{position: absolute;}
@@ -272,7 +272,7 @@ background-size: cover;}
 
     .container{width: 90%; margin: 0 auto;}
     #article1{
-        margin-top: 80px;}
+        margin-top: 65px;}
     #article1 figure:nth-child(1) img{width: 30%;}
     #article1 figure:nth-child(2) img{width: 50%;}
     #article1 figure:nth-child(3) img{width: 30%;}
@@ -357,6 +357,8 @@ background-size: cover;}
     #article1 figure:nth-child(4) img{width: 80%;}
     #article1 figure:nth-child(4):after{width: 300px; top:-100px;}
 
+    .art2_box1 h2{text-align: center; right: 80%;}
+
     #article3{height:700px;}
     .rw_logo{width: 100%; height: 300px; background-position: center 20px;}
     .rewards{width: 100%; height: auto;}
@@ -389,6 +391,8 @@ background-size: cover;}
     #article1 figure:nth-child(4){left:60px; top:1100px;}
     #article1 figure:nth-child(4) img{width: 100%;}
     #article1 figure:nth-child(4):after{width: 300px; top:300px;}
+  
+    .art2_box1 h2{text-align: left; right: 80%;}
 
     #article3{height:750px;}
     
