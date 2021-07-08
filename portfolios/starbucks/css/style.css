@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 .clearfix::before,.clearfix::after{display: block; content: ''; clear: both;}
+
+#skip{position: relative;}
+#skip a{position: absolute; z-index: 20; left: 0px; top: -100px; border: 1px solid #fff; color: #fff; background: #333; line-height: 30px; width: 140px; text-align: center; font-size: 12px;}
+#skip a:active, 
+#skip a:focus{top: 0;}
 /* 레이아웃 */
 #header{background-color: #f6f5ef; border-top: 2px solid #111; height: 100px; padding-top: 15px;position: fixed; left: 0; top: 0; z-index: 10; width: 100%;}
 #bodywrap{width: 100%; overflow: hidden;}
