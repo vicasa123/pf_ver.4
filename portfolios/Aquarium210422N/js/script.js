@@ -28,7 +28,7 @@ $(document).ready(function(){
 	});
 
 
-	// 리모컨************************
+	// 리모컨 ************************
 
 	$('.remote').click(function(){
 		$('.remote_on').stop().slideToggle(500);
@@ -132,11 +132,11 @@ $('.tsbox').click(function(){
 	// $('.tspan').css('backgroundColor','#555');
 
 		 countNum++;
-		 if (countNum%2==1) {openNav();}else{closeNav();}
+		 if (countNum%2==1) {openNavi();}else{closeNavi();}
 		 if (countNum%2==0) {countNum=0;}
 });
 
-	function openNav(){
+	function openNavi(){
 		$('.tswrap').children('span').eq(0).css({transform:'rotate(45deg)'
 			,position:'absolute'
 			,top:'7px',left:'25px',transition:'all 0.1s'});
@@ -151,7 +151,7 @@ $('.tsbox').click(function(){
 		$('.tspan').css('backgroundColor','#555');
 	};
 
-	function closeNav(){
+	function closeNavi(){
 		$('.tswrap').children('span').eq(0).css({transform:'rotate(0deg)'
 			,position:'absolute',top:'0px'
 			,transition:'all 0.1s'});
