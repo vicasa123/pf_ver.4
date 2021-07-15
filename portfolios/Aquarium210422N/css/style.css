@@ -1,7 +1,7 @@
 @charset "utf-8";              
 *{margin: 0 auto;padding: 0;}
 .clearfix::after, .clearfix::before{display:block; content: ''; clear: both;}
-
+html{ overflow-x: hidden;}
 ul{list-style: none;}
 body{
 	/*background: blue;*/
@@ -1077,7 +1077,7 @@ footer{
 	.copy{
 		height: 35px;
 		position: absolute;
-		left: 20%;top: 300px;
+		left: 20%;top: 330px;
 		color: #ccc;
 		font-size: 12px;
 		/* background: pink; */
