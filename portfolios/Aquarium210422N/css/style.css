@@ -9,7 +9,7 @@ body{
 	font-size: 17px;
 	position: relative;
 	width: 100%;
-	overflow: scroll;
+	/* overflow: scroll; */
 	overflow-x: hidden;
 	
 }
