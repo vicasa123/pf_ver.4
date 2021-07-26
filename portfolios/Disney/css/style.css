@@ -1,0 +1,249 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+/*font-family: 'Orbitron', sans-serif;*/
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+a{
+	text-decoration: none;color: #555;
+	/*outline: 0;*/
+}
+img{border:0;}
+body{
+	font-family: 'Orbitron', sans-serif;
+	/*background-color: pink;*/
+	}
+	/*레이아웃*/
+	/*배경이미지(아침)*/
+#wrap{
+	position: fixed;left: 0;top: 0;
+	width: 100%;
+	height: 100%;
+	min-width: 1400px;
+	min-height: 780px;
+	background: url('../images/bg_morning.jpg') no-repeat;
+	background-size: cover;
+	transition: all 2s;
+}
+
+#wrap h1{
+	position: fixed;left: 60px;top: 30px;
+	width: 90px;
+	height: 80px;
+	background: url('../images/logo_b.png')no-repeat;
+	background-size: contain;
+}
+
+#gnb{
+	position: fixed;top:50px;right:200px;
+}
+
+#gnb li{float: left; margin-left: 30px;}
+
+#gnb li a{
+	font-size: 14px;font-weight: bold;color: #555;
+}
+/*sns: font awesome*/
+#sns{
+	position: fixed;top:50px;right:50px;
+}
+#sns li{float: left; margin-left: 20px;}
+
+#sns li i{
+	font-size: 18px;font-weight: bold;color: #555;
+}
+
+/*슬로건*/
+article{
+	position: absolute;top:350px;left:150px;
+	width: 450px;}
+
+article p{
+	font-size: 50px; color: 666;
+}
+
+article p strong{
+	color: #111;
+}
+
+article em{font-size: 14px; font-style: normal;color: #333;}
+
+/*스마트폰 사진*/
+figure{
+	position: absolute;top: 150px;right: 0px;
+	width: 1000px;height: 800px;
+	background: url('../images/phone_morning.png')no-repeat;
+}
+
+figure p{
+	/*background-color: pink;*/
+	overflow: hidden;
+	width: 740px;height: 343px;
+	position: absolute;top: 350px;left: 350px;
+	font-size: 60px;font-weight: bold;color: #333;
+	line-height: 4.6;
+	box-sizing: border-box;
+	padding-left: 50px;
+}
+
+figure p span{
+	position: relative;
+	z-index: 5;
+
+}
+
+/*테마(아침, 점심, 저녁, 밤) 버튼*/
+nav{
+	position: fixed;left: 6%;bottom: 70px;
+	width: 88%;
+}
+
+nav li{float: left; width: 25%;}
+
+nav li a{
+	display: block;
+	width: 98%; height: 35px;
+	color: #111; background-color: #fff; opacity: 0.6;
+	font-size: 12px;font-weight: bold;line-height: 3; 
+	letter-spacing: 3px;
+	padding-left: 30px;
+	box-sizing: border-box;
+	transition: all 0.5s;
+	/*text-align: center;*/
+	}
+
+nav li:hover a{background: #111;color: #fff;opacity: 0.9;}
+
+nav li.on a{background: #111;color: #fff;opacity: 0.9;}
+
+/*nav ul li{
+	float: left;
+	position: relative;
+	top: 700px; left: 10%;
+	background-color: rgba(255,255,255,0.5);
+	padding:20px 20px 5px 50px;
+	margin-right: 10px;
+	font-weight: bold;
+	}
+*/
+
+/*구름:애니메이션 */
+#wrap>img:nth-child(1){
+	position: absolute;top: 0;left: -1146px;
+	opacity: 0.8;
+	/*이름:ani1, 시간 110초, 속도 일정하게, 무한반복*/
+
+	
+	animation: ani1 110s linear infinite;
+
+}
+@keyframes ani1{
+	0%{left: -1146px;}
+	100%{left: 1950px;}
+}
+
+#wrap>img:nth-child(2){
+	position: absolute;top: 20;left: 0px;
+	/*이름:ani2, 시간 10초, 속도 일정하게, 무한반복*/
+	animation: ani2 100s linear infinite;
+	}
+
+@keyframes ani2{
+	0%{left:0px;}
+	50%{left: 1950px; opacity: 0;}
+	50.01%{left:-1840px; opacity: 0.8;}
+	100%{left: 0px;}
+}
+
+
+
+
+/*스마트폰 구름:애니메이션*/
+figure p img.cl1{width: 700px; position:absolute;top: 30px;left: -600px;
+	animation: ani3 110s linear infinite;}
+
+@keyframes ani3{
+	0%{left: -600px;}
+	100%{left: 540px;}
+}
+figure p img.cl1{width: 700px; position:absolute;top: 20px;left: 0px;
+	animation: ani4 100s linear infinite;}
+
+@keyframes ani4{
+	0%{left:0px;}
+	50%{left: 540px; opacity: 0;}
+	50.01%{left:-700px; opacity: 1;}
+	100%{left: 0px;}
+}
+
+/*아침 클래스*/
+#wrap.morning{
+	background-image: url('../images/bg_morning.jpg');
+}
+#wrap.morning h1{
+	background-image: url('../images/logo_b.png');
+}
+#wrap.morning #gnb a{color: #555;}
+#wrap.morning #sns i{color: #555;}
+#wrap.morning article p{color: #555;}
+#wrap.morning article p strong{color: #666;}
+#wrap.morning article em{color: #333;}
+#wrap.morning figure{background: url('../images/phone_morning.png');}
+#wrap.morning figure p{color: #333;}
+#wrap.morning>img:nth-child(1){opacity: 1;}
+#wrap.morning>img:nth-child(2){opacity: 1;}
+
+
+/*점심 클래스 */
+#wrap.afternoon{
+	background-image: url('../images/bg_afternoon.jpg');
+}
+#wrap.afternoon h1{
+	background-image: url('../images/logo_b.png');
+}
+#wrap.afternoon #gnb a{color: #555;}
+#wrap.afternoon #sns i{color: #555;}
+#wrap.afternoon article p{color: #555;}
+#wrap.afternoon article p strong{color: #666;}
+#wrap.afternoon article em{color: #333;}
+#wrap.afternoon figure{background: url('../images/phone_afternoon.png');}
+#wrap.afternoon figure p{color: #333;}
+#wrap.afternoon>img:nth-child(1){opacity: 1;}
+#wrap.afternoon>img:nth-child(2){opacity: 1;}
+
+
+/*저녁 클래스*/
+#wrap.evening{
+	background-image: url('../images/bg_evening.jpg');
+}
+#wrap.evening h1{
+	background-image: url('../images/logo_w.png');
+}
+#wrap.evening #gnb a{color: #fff;}
+#wrap.evening #sns i{color: #fff;}
+#wrap.evening article p{color: #444;}
+#wrap.evening article p strong{color: #fff;}
+#wrap.evening article em{color: #333;}
+#wrap.evening figure{background: url('../images/phone_evening.png');}
+#wrap.evening figure p{color: #fff;}
+#wrap.evening>img:nth-child(1){opacity: 0.6;}
+#wrap.evening>img:nth-child(2){opacity: 0.6;}
+
+
+/*밤 클래스*/
+#wrap.night{
+	background-image: url('../images/bg_night.jpg');
+}
+#wrap.night h1{
+	background-image: url('../images/logo_w.png');
+}
+#wrap.night #gnb a{color: #fff;}
+#wrap.night #sns i{color: #fff;}
+#wrap.night article p{color: #bbb;}
+#wrap.night article p strong{color: #fff;}
+#wrap.night article em{color: #888;}
+#wrap.night figure{background: url('../images/phone_night.png');}
+#wrap.night figure p{color: #fff;}
+#wrap.night>img:nth-child(1){opacity: 0.1;}
+#wrap.night>img:nth-child(2){opacity: 0.1;}
+#wrap.night>figure a img.cl1{opacity: 0.4;}
+#wrap.night>figure a img.cl2{opacity: 0.4;}

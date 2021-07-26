@@ -1,0 +1,3 @@
+img_slidecontents01.png 668*130
+
+closemenu 70*70

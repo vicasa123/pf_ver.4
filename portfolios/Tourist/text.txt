@@ -1,0 +1,86 @@
+logo.png	254*32
+서체 : Charlemagne Std Bold // 22pt // #666666
+
+mainslide01.jpg
+mainslide02.jpg
+mainslide03.jpg
+
+btn_roll_play.png	15*15
+btn_roll_stop.png	15*15
+btn_rollbutt_off.png	15*15
+btn_rollbutt_on.png	35*15
+
+img_slidecontents01.png	668*130
+img_slidecontents02.png	668*130
+img_slidecontents03.png	668*130
+
+btn_closeMenu.png	70*70
+
+
+img_topplace01.jpg	340*328
+img_topplace02.jpg	340*328
+img_topplace03.jpg	340*328
+
+bg_app.jpg	695*190
+ico_katalk.png	43*43
+ico_phone.png	43*43
+
+모달
+btn_closeMenu.png	70*70
+img_pop1_1.jpg
+img_pop2_1.jpg
+img_pop2_2.jpg
+img_pop3_1.jpg
+
+
+
+
+************************
+로그인페이지
+tit_login.png	500*320
+ico_kakao.png	72*72
+ico_naver.png	72*72
+ico_face.png	72*72
+ico_cellphone.png	72*72
+
+
+
+회원가입
+img_top2.jpg
+ico_selectArr.png	37*61
+bg_checkbox.png		40*80
+bg_radio.png		15*100
+
+
+
+마이페이지
+bg_reglist.png		170*5
+
+
+공지사항
+btn_firstpage.png	12*12
+btn_prevpage.png	12*12
+btn_nextpage.png	12*12
+btn_lastpage.png	12*12
+ico_search.png		32*32
+
+공지사항_상세보기
+ico_nearPrev.png	16*8
+ico_nearNext.png	16*8	^
+
+
+프로그램 소개
+img_top4.jpg
+
+img_place_01.jpg
+img_place_02.jpg
+img_place_03.jpg
+img_place_04.jpg
+img_place_05.jpg
+img_place_06.jpg
+img_place_07.jpg
+img_place_08.jpg
+img_place_09.jpg
+img_place_10.jpg
+img_place_11.jpg
+img_place_12.jpg

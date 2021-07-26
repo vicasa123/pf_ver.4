@@ -1,0 +1,265 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+/*font-family: 'Poiret One', cursive;*/
+
+/*reset:초기화*/
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+a{
+	text-decoration: none;color: #555;
+	/*outline: 0;*/
+}
+img{border:0;}
+body{
+	font:12px/1.6 'Poiret One'; 
+	color: #555;}
+
+/*레이아웃*/
+/*header*/
+header{
+	position: fixed;left: 0;top: 0;
+	width: 15%;height: 100%;
+	background: #fff;
+}
+
+nav{
+	width: 85%;
+	height: 35px;
+	background: #333333;
+	position: relative;
+	margin-left: 15%;
+}
+
+section{
+	width: 85%;
+	/*background: pink;*/
+	margin-left: 15%;
+}
+
+article{
+	float: left;
+	height: 260px;
+ /*애니메이션 호출*/
+	animation:scale 1s;
+}
+
+article:nth-child(1){width: 60%;height: 520px;}
+article:nth-child(2){width: 40%;}
+article:nth-child(3){width: 20%;}
+article:nth-child(4){width: 20%;}
+
+article:nth-child(5){width: 20%;}
+article:nth-child(6){width: 40%;}
+article:nth-child(7){width: 20%;}
+article:nth-child(8){width: 20%;}
+
+article:nth-child(9){width: 40%;}
+article:nth-child(10){width: 20%;}
+article:nth-child(11){width: 20%;}
+article:nth-child(12){width: 20%;}
+
+@keyframes scale{
+	0%{transform: scale(0);}
+	10%{transform: scale(1);}
+}
+
+article>div{
+	position: relative;
+	width: 100%;height: 100%;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+/*헤더 컨텐츠*/
+header h1{
+	text-indent: -99999px;
+	width: 180px;height: 136px;
+	/*background: url("../images/logo1.png")no-repeat center;*/
+	background: url("../images/logo1.png")no-repeat;
+	background-size: contain;
+	/*background-size: cover;*/
+	position: absolute;top:70px;left: 50%;
+	margin-left: -90px;
+}
+
+/*목록 : Hotel / Facility / Business / Restaurant*/
+#gnb{
+	position: absolute;top: 300px;right: 57px;
+}
+
+#gnb a{
+	font-size: 17px;color: #555;font-weight: bold;
+	line-height: 1.8;
+	/*background-color: pink;*/
+	padding: 8px 30px;
+	transition: all 0.5s;
+}
+
+#gnb a:hover{
+	color: skyblue;
+}
+
+#gnb a i{margin-right: 13px;}
+
+.snsSet{
+	/*background-color: pink;*/
+	width: 100px; height: 47px;
+	position: absolute;bottom: 50px;right: 50%;
+	margin-right: -45px;
+}
+
+.snsSet a{
+	float: left;
+	font-size: 11px;
+}
+
+.snsSet a img{
+	padding:10px 1px;
+}
+
+.snsSet a:first-child:after{
+	content:"|";display: inline-block;
+	padding: 0px 2px;
+}
+
+/*목록 Sign up for stylenews / English / Log in or Register / Checkout*/
+nav a{
+	color: #fff;
+	position: absolute;top: 5px;
+	/*left: 10px;*/
+}
+nav a:nth-child(1){left: 10px;}
+nav a:nth-child(2){left: 150px;}
+nav a:nth-child(3){right: 90px;}
+nav a:nth-child(4){right: 10px;}
+
+article .bg{
+	/*width: 100%;height: 100%;*/
+	background: url("../images/pic1.jpg") no-repeat;
+	background-size: cover;
+	/*background-position: center center;*/
+}
+
+article .bg span{
+	position: absolute;bottom: 0;right: 20px;
+	color: #fff;font-size: 60px;
+	opacity: 0;
+	transform: scale(10);
+	transition:all 1s;
+}
+
+article .bg1 span{
+	font-size: 170px;
+	bottom:-70px; right: 0px;
+	opacity: 1;
+	transform: scale(1);
+	transition: all 0.4s;
+}
+
+article .bg:hover span{
+	opacity: 1;
+	transform: scale(1);
+}
+
+/*article .bg1 span{
+	font-size: 170px;
+	bottom:-72px; right: -6px;
+	opacity: 1;
+	transform: scale(1);
+}*/
+
+article .bg1:hover span{
+	color: #222;
+	/*******/
+	transform: rotateY(180deg);
+}
+
+article .bg2{
+	background: url("../images/pic2.jpg")no-repeat;
+}
+
+article .bg3{
+	background: url("../images/pic3.jpg")no-repeat;
+}
+
+article .bg4{
+	background: url("../images/pic4.jpg")no-repeat;
+}
+
+article .bg5{
+	background: url("../images/pic5.jpg")no-repeat;
+}
+
+article .bg6{
+	background: url("../images/pic6.jpg")no-repeat;
+}
+
+article .bg7{
+	background: url("../images/pic7.jpg")no-repeat;
+}
+
+article .txt{
+	color: #666;background: #fff;
+	box-sizing: border-box;padding: 40px 30px;
+	transition: all 0.5s;
+}
+
+/*article:hover .txt{
+	color: #fff;
+	background: #6ce2fb;
+}*/
+
+article:nth-child(3) .txt{
+	background: skyblue;
+}
+
+article:nth-child(11) .txt{
+	background: #e3f1fb;
+}
+
+article .txt i{
+	position: absolute;bottom: -70px;right: -200px;
+	font-size: 200px;
+	color: #b2effc;
+	opacity: 0;
+	transition: all 0.7s;
+}
+
+article:nth-child(3) .txt i{
+	bottom: -20px;right: -15px;
+	opacity: 0.7;
+	font-size:200px; color: #fff;
+}
+
+article .txt strong{
+	color: #444; font-weight: normal;
+	margin-bottom: 20px;
+	font-size: 30px;line-height: 1.6;
+	transition: all 0.5s;
+}
+
+article:hover .txt{
+	color: #fff;
+	background: #6ce2fb;
+}
+
+article:hover .txt i{
+	right: 0;
+	opacity: 0.5;
+}
+
+article:hover .txt strong{
+	color: fff;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1599px;){}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px;){}
+
+@media screen and (min-width: 780px) and (max-width: 1023px;){}
+
+@media screen and (min-width: 640px) and (max-width: 779px;){}
+
+@media screen and (min-width: 480px) and (max-width: 639px;){}
+
+@media screen and (max-width: 479px;){}

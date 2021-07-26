@@ -1,0 +1,315 @@
+@charset "utf-8";  
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+/*font-family: 'Dela Gothic One', cursive;*/
+
+*{
+	margin: 0;padding: 0;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #222;
+}
+
+img{
+	border:none;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: pink;
+	font-family: 'Dela Gothic One', cursive;
+}
+
+/*****원근감****/
+.wrap{
+	width: 100%;height: 100%;
+	position: fixed;
+	perspective: 900px;}
+
+
+.btnMenu{
+	position: fixed;left: 40px;top: 50px;
+	z-index: 3; font-size: 40px; text-align: center;
+	color: #fff;
+	animation: ani 0.5s infinite alternate;
+}
+@keyframes ani{
+	0%{opacity: 1; color: #fff; transform: scale(1);}
+	100%{opacity: 0.8; color: #888; transform: scale(1.5);}
+
+}
+
+nav{
+	position: fixed;z-index: 2;
+	top: 0;left: 0;
+	width: 150px;
+	height: 100%;
+	background-color: #eee;
+	/********/
+	transform:rotateY(120deg);
+	transform-origin: left center;
+	transition: all 0.5s;
+	opacity: 0;
+}
+
+nav.on{
+	opacity: 1;
+	transform: rotateY(15deg);
+}
+
+
+
+nav>h1{
+	position: absolute;
+	top: 80px; left: 50%; margin-left: -50px;
+	width: 100px;height: 100px; overflow: hidden;
+}
+
+nav>h1>img{width: 100%;}
+
+nav>ul{
+	position: absolute;top: 35%;left: 0;
+	width: 100%;
+}
+
+nav>ul>li>a{
+	display: block;
+	width: 100%;
+	line-height: 4;
+	font-size: 18px;
+	color: #000;
+	text-align: center;
+}
+
+nav>ul>li>a:hover{
+	color: #fff;
+	background-color: #000;
+}
+
+section{
+	position: fixed;
+	width: 100%; height: 100%;
+	background: #555;
+	/********/
+	transform-origin: right center;
+	transition: all 0.5s;
+}
+
+section.on{
+	transform: rotateY(-10deg);
+}
+
+
+section>article{
+	/*회전 효과*/
+	position: absolute;width: 100%;height: 100%;
+	/*display: none;*/
+	opacity: 0;
+	/**********/
+	transition: all 1.5s;
+	perspective: 700px;
+}
+
+section>article.on{
+	opacity: 1;
+	/*z-index: 2;
+	display: block;*/
+}
+
+section>article>p{
+	/****회전 효과를 시각화하기 위하여***/
+	position: rel
+	overflow: hidden;
+	transform: rotateY(360deg);
+	transition:all 1.5s;
+}
+
+section>article.on>p{
+	transform: rotateY(0deg);
+	
+}
+
+
+
+
+section>article>p>span{
+	position: absolute;
+	display: block;
+	width: 100%;top: 50%;
+	margin-top: -10px;
+	font-size: 20px;
+	color: #eee;
+	text-align: center;
+}
+
+section>article>p>strong{
+	position: absolute;
+	width: 100%;top: 50%;font-size: 50px;
+	color: #fff;
+	margin-top: -25px;text-align: center;
+}
+
+section>article>p>em>a>i{
+	position: relative;
+	top: 50%;
+	font-size: 30px !important;
+	color: #eee;
+	margin: 0px 15px;
+	margin-top: -15px;
+	opacity: 0.5;
+	transition: all 0.5s;
+	display: inline-block;
+}
+
+section>article>p>em>i:hover{
+	transform: scale(1.2);
+	opacity: 1;
+}
+
+/*.box1{display: none;}
+.box1.on{display: block;}
+
+*/
+
+
+.box1>p{
+	position: relative;
+	width: 25%;
+	height: 25%;
+	float: left;
+	text-align: center;
+
+}
+
+.box1>p:nth-child(1){width: 50%;}
+
+.box1>p:nth-child(2){
+	background:url("../images/beauty1.png")no-repeat;
+	background-size:cover;
+}
+
+.box1>p:nth-child(3){}
+
+
+.box1>p:nth-child(4){
+	float: right;
+	width: 50%;
+	height: 50%;
+	background:url('../images/beauty2.png')no-repeat center;
+	background-size: cover;
+}
+
+.box1>p:nth-child(5){
+	float: right;
+	background:url('../images/beauty3.jpg')no-repeat;
+}
+
+.box1>p:nth-child(6){
+	float: right;
+}
+
+.box1>p:nth-child(7){
+	background:url('../images/beauty4.jpg')no-repeat;
+	float: right;
+}
+
+.box1>p:nth-child(8){
+	float: right;
+	background:url('../images/beauty5.jpg')no-repeat; 
+}
+
+.box1>p:nth-child(9){
+
+}
+
+.box1>p:nth-child(10){
+	background:url('../images/beauty6.png')no-repeat;
+	width: 50%;}
+
+.box1>p:nth-child(11){}
+
+
+/*********/
+
+/*.box2{display: none;}
+.box2.on{display: block;}
+*/
+.box2>p{
+	position: relative;
+	width: 25%;
+	height: 25%;
+	float: left;
+	text-align: center;}
+
+.box2>p:nth-child(1){}
+.box2>p:nth-child(2){background:url('../images/fashion3.jpg')no-repeat center;
+
+background-size:cover;}
+.box2>p:nth-child(3){width: 50%;}
+
+.box2>p:nth-child(4){
+	height: 50%;
+	background:url('../images/fashion2.jpg')no-repeat center;
+	background-size:cover;
+
+}
+.box2>p:nth-child(5){width: 50%;height: 50%;
+	background:url('../images/fashion1.jpg')no-repeat top;
+background-size:cover;}
+.box2>p:nth-child(6){background:url('../images/fashion4.jpg')no-repeat center;
+background-size:cover;
+}
+
+.box2>p:nth-child(7){}
+.box2>p:nth-child(8){background:url('../images/fashion5.jpg')no-repeat top;
+background-size:cover;}
+.box2>p:nth-child(9){}
+
+.box2>p:nth-child(10){background:url('../images/fashion6.jpg')no-repeat center;
+background-size:cover;}
+.box2>p:nth-child(11){background:url('../images/fashion7.jpg')no-repeat center;
+background-size:cover;}
+
+/*
+.box3{display: none;}
+.box3.on{display: block;}*/
+
+.box3>p{
+	position: relative;
+	width: 25%;
+	height: 25%;
+	float: left;
+	text-align: center;}
+
+.box3>p:nth-child(1){width: 50%; height: 100%;
+	background:url('../images/feature1.jpg')no-repeat;
+	background-size: cover;
+}
+.box3>p:nth-child(2){}
+
+.box3>p:nth-child(3){background:url('../images/feature2.jpg')no-repeat center;}
+
+.box3>p:nth-child(4){
+	width: 50%;
+
+}
+.box3>p:nth-child(5){height: 50%;
+	background:url('../images/feature3.jpg')no-repeat center;
+background-size:cover;}
+
+.box3>p:nth-child(6){
+}
+
+.box3>p:nth-child(7){
+	background:url('../images/feature4.jpg')no-repeat center;
+background-size:cover;
+}
+
